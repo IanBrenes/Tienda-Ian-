@@ -3,13 +3,91 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
-<html>
+
+
+<html lang="es">
     <head>
-        <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animales - Marmota y Tigre</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <style>
+            body {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+            .main-content {
+                flex: 1;
+            }
+            .aside-celeste {
+                background: linear-gradient(135deg, #87CEEB 0%, #4682B4 100%);
+            }
+            .body-azul-marino {
+                background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            }
+            footer {
+                margin-top: auto;
+            }
+        </style>
     </head>
     <body>
-        <div>TODO write content</div>
+        <nav class="navbar" style="background-color: #ff6600;">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1" style="color: white;">Tienda Ian</span>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="audios.html" style="color: white;">Audios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="videos.html" style="color: white;">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iframes.html" style="color: white;">IFrame</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulario.html" style="color: white;">Formulario</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid main-content">
+            <div class="row h-100">
+                <!-- Aside izquierdo -->
+                <aside class="col-md-3 aside-celeste p-4">
+                    <h3 class="text-white mb-3" style="text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Marmota</h3>
+                    <p class="text-white" style="text-shadow: 0 1px 2px rgba(0,0,0,0.2);">Las marmotas son roedores de gran tamaño que hibernan durante el invierno. Son conocidas por su comportamiento de "día de la marmota" y viven en madrigueras subterráneas. Se alimentan principalmente de vegetación y pueden llegar a pesar hasta 6 kg.</p>
+                </aside>
+
+                <!-- Contenido principal -->
+                <main class="col-md-9 body-azul-marino p-4">
+                    <h1 class="text-center mb-4 text-white" style="text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Tigre</h1>
+
+                    <div class="text-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=200&h=200&fit=crop&crop=center" 
+                             alt="Tigre" 
+                             class="img-fluid rounded shadow-lg" 
+                             style="width: 200px; height: 200px; object-fit: cover;">
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <p class="lead text-white" style="text-shadow: 0 1px 2px rgba(0,0,0,0.3);">El tigre es el felino más grande del mundo y uno de los depredadores más poderosos. Con su distintivo pelaje naranja y rayas negras, estos magníficos animales pueden llegar a medir hasta 3 metros de longitud. Son excelentes nadadores y cazadores solitarios que habitan principalmente en Asia. Lamentablemente, están en peligro de extinción debido a la caza furtiva y la pérdida de hábitat.</p>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-4">
+            <div class="container">
+                <p class="mb-2">&copy; 2024 Página de Animales. Todos los derechos reservados.</p>
+                <p class="mb-0">Aprende más sobre la fauna mundial</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
