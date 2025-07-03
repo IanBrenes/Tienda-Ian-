@@ -1,8 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 package com.tienda.domain;
 
 import jakarta.persistence.*;
@@ -20,22 +15,15 @@ public class Categoria implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_categoria")
     private Long idCategoria;
-    
     private String descripcion;
     private String rutaImagen;
     private boolean activo;
-
+    
     public Categoria() {
     }
-
+    
     public Categoria(String categoria, boolean activo) {
         this.descripcion = categoria;
         this.activo = activo;
     }
-
-    
-    public boolean isActivo() {
-        return activo;
-    }
 }
-
